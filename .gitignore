@@ -1,0 +1,7 @@
+*.tone.js
+*.node_modules
+*.express
+*.mongodb
+*.heroku
+*.react
+*heroku-cli
