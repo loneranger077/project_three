@@ -1,1 +1,1 @@
-# project_three
+This project, SoundMaster, allows users to play sound clips of various instruments and organize them into tracks or beats that can be saved and worked on/replayed later on.  Users log in first and can store tracks.  They can be shared with the rest of the users if they so choose.
