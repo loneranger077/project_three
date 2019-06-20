@@ -21,6 +21,7 @@
     "@types/react-redux": "^7.1.0",
     "express": "^4.17.1",
     "heroku": "^7.25.0",
+    "howler": "^2.1.2",
     "mongo": "^0.1.0",
     "react": "^16.8.6",
     "react-redux": "^7.1.0",
