@@ -2,9 +2,15 @@
   "name": "project_three",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,13 +24,13 @@
   },
   "homepage": "https://github.com/loneranger077/project_three#readme",
   "dependencies": {
-    "@types/react-redux": "^7.1.0",
     "express": "^4.17.1",
     "heroku": "^7.25.0",
-    "howler": "^2.1.2",
-    "mongo": "^0.1.0",
-    "react": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "redux": "^4.0.1"
+    "if-env": "^1.0.4",
+    "mongoose": "^5.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.1"
   }
 }

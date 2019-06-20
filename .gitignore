@@ -1,7 +1,2 @@
-*.tone.js
-*.node_modules
-*.express
-*.mongodb
-*.heroku
-*.react
-*heroku-cli
+node_modules
+.DS_Store
