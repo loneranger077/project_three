@@ -1,18 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Container from "./Components/Container";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Soon you will be able to login, make music, and save your tracks right here!
-        </p>
-      </header>
-    </div>
-  );
+  return <Container />;
 }
 
 export default App;
