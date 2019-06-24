@@ -1,16 +1,8 @@
 import React from "react";
-
-import "./App.css";
-import FormRegister from "./Components/FormRegister";
-import FormLogin from "./Components/FormLogin";
+import Container from "./Components/Container";
 
 function App() {
-  return (
-    <div className="App">
-      <FormLogin />
-      <FormRegister />
-    </div>
-  );
+  return <Container />;
 }
 
 export default App;

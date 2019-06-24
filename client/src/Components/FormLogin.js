@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 
 class FormLogin extends Component {
-  state = {
-    username: "",
-    password: ""
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: "",
+      password: "",
+      isOnForm: false
+    };
+  }
 
+  isOnForm() {
+    this.setState({ isOnForm: true });
+  }
+  handleLoginClick() {}
   handleInputChange = event => {
     const { name, value } = event.target;
 
@@ -14,32 +22,39 @@ class FormLogin extends Component {
     });
   };
 
-  handleFormSubmit = event => {
-    event.preventDefault();
-    alert(`Username: ${this.state.username}\nPassword: ${this.state.password}`);
-    this.setState({ username: "", password: "" });
-  };
-
+  submitLogin(e) {}
   render() {
     return (
-      <form>
-        <p>Login</p>
-        <input
-          type="text"
-          placeholder="Username"
-          name="username"
-          value={this.state.username}
-          onChange={this.handleInputChange}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          name="password"
-          value={this.state.password}
-          onChange={this.handleInputChange}
-        />
-        <button onClick={this.handleFormSubmit}>Submit</button>
-      </form>
+      <div className="inner-container">
+        <div className="header">Login</div>
+        <div className="box">
+          <div className="input-group">
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              className="loing-input"
+              placeholder="Username"
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="username">Password</label>
+            <input
+              type="password"
+              name="password"
+              className="login-input"
+              placeholder="Password"
+            />
+          </div>
+          <button
+            type="button"
+            className="login-btn"
+            onClick={this.submitLogin.bind(this)}
+          >
+            Login
+          </button>
+        </div>
+      </div>
     );
   }
 }

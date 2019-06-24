@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 
 class FormRegister extends Component {
-  state = {
-    username: "",
-    password: "",
-    email: "",
-    isOnRegister: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: "",
+      password: "",
+      isOnForm: false
+    };
+  }
 
   isOnRegister() {
-    this.setState({ isOnRegister: true });
+    this.setState({ isOnForm: true });
   }
 
   handleInputChange = event => {
@@ -20,43 +22,48 @@ class FormRegister extends Component {
     });
   };
 
-  handleFormSubmit = event => {
-    event.preventDefault();
-    alert(
-      `Username: ${this.state.username}\nPassword: ${
-        this.state.password
-      }\nEmail: ${this.state.email}`
-    );
-    this.setState({ username: "", password: "", email: "" });
-  };
-
+  submitRegister(e) {}
   render() {
     return (
-      <form>
-        <button onClick={this.isOnRegister}>Login</button>
-        <input
-          type="text"
-          placeholder="Username"
-          name="username"
-          value={this.state.username}
-          onChange={this.handleInputChange}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          name="password"
-          value={this.state.password}
-          onChange={this.handleInputChange}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          value={this.state.email}
-          onChange={this.handleInputChange}
-        />
-        <button onClick={this.handleFormSubmit}>Submit</button>
-      </form>
+      <div className="inner-container">
+        <div className="header">Register</div>
+        <div className="box">
+          <div className="input-group">
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              className="loing-input"
+              placeholder="Username"
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              className="login-input"
+              placeholder="Password"
+            />
+          </div>
+          <div className="input-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              className="login-input"
+              placeholder="Email"
+            />
+          </div>
+          <button
+            type="button"
+            className="login-btn"
+            onClick={this.submitRegister.bind(this)}
+          >
+            Register
+          </button>
+        </div>
+      </div>
     );
   }
 }
