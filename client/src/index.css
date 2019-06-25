@@ -16,3 +16,15 @@ code {
 .box-container{
   margin-left: 900px;
 }
+
+#musicbtn{
+  margin-top: 300px;
+}
+
+button{
+
+  padding: 20px;
+  width: 200px;
+  margin-top: 10px;
+
+}
