@@ -11,10 +11,10 @@ function AppPage (props) {
             className = "container" id="musicbtn">
         
         <div>
-   <div><button onClick={() => sound1.play()} className="playSound" id="kick">Basic Kick Drum</button></div>
-   <div><button onClick={() => sound3.play()} className="playSound" id="snare">Basic Snare Drum</button></div> 
-   <div><button onClick={() => sound4.play()} className="playSound" id="clap">Basic Clap Drum</button></div>
-   <div><button onClick={() => sound2.play()} className="playSound" id="hat">Basic Hat Drum</button></div>
+   <div><button onMouseOver={() => sound1.play()} className="playSound" id="kick">Basic Kick Drum</button></div>
+   <div><button onMouseOver={() => sound3.play()} className="playSound" id="snare">Basic Snare Drum</button></div> 
+   <div><button onMouseOver={() => sound4.play()} className="playSound" id="clap">Basic Clap Drum</button></div>
+   <div><button onMouseOver={() => sound2.play()} className="playSound" id="hat">Basic Hat Drum</button></div>
  </div>
  </div>
     )
