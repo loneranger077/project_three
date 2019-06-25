@@ -5,13 +5,8 @@ class FormRegister extends Component {
     super(props);
     this.state = {
       username: "",
-      password: "",
-      isOnForm: false
+      password: ""
     };
-  }
-
-  isOnRegister() {
-    this.setState({ isOnForm: true });
   }
 
   handleInputChange = event => {

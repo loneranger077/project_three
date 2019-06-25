@@ -5,15 +5,10 @@ class FormLogin extends Component {
     super(props);
     this.state = {
       username: "",
-      password: "",
-      isOnForm: false
+      password: ""
     };
   }
 
-  isOnForm() {
-    this.setState({ isOnForm: true });
-  }
-  handleLoginClick() {}
   handleInputChange = event => {
     const { name, value } = event.target;
 
@@ -22,7 +17,9 @@ class FormLogin extends Component {
     });
   };
 
-  submitLogin(e) {}
+  handleLoginSubmit = event => {
+    event.preventDefault();
+  };
   render() {
     return (
       <div className="inner-container">
@@ -33,6 +30,8 @@ class FormLogin extends Component {
             <input
               type="text"
               name="username"
+              value={this.state.username}
+              onChange={this.handleInputChange}
               className="loing-input"
               placeholder="Username"
             />
@@ -42,14 +41,17 @@ class FormLogin extends Component {
             <input
               type="password"
               name="password"
+              value={this.state.password}
+              onChange={this.handleInputChange}
               className="login-input"
               placeholder="Password"
             />
           </div>
+
           <button
             type="button"
             className="login-btn"
-            onClick={this.submitLogin.bind(this)}
+            onClick={this.handleLoginSubmit.bind(this)}
           >
             Login
           </button>

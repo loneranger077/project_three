@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import FormLogin from "./FormLogin";
-import FormRegister from "./FormRegister";
+import FormLogin from "./LoginForm";
+import FormRegister from "./RegisterForm";
 
 class Container extends Component {
   constructor(props) {
@@ -23,7 +23,6 @@ class Container extends Component {
           <button onClick={this.showLoginForm}>Login</button>
           <button onClick={this.showRegisterForm}>Register</button>
         </div>
-
         {this.state.isLoginOpen ? <FormLogin /> : null}
         {this.state.isRegisterOpen ? <FormRegister /> : null}
       </div>
