@@ -26,15 +26,15 @@ class FormLogin extends Component {
   render() {
     return (
       <div className="inner-container">
-        <div className="header">Login</div>
+        <div className="header">Login Below</div>
         <div className="box">
           <div className="input-group">
             <label htmlFor="username">Username</label>
             <input
               type="text"
               name="username"
-              className="loing-input"
-              placeholder="Username"
+              className="login-input"
+              placeholder="Username" 
             />
           </div>
           <div className="input-group">

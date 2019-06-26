@@ -1,7 +1,8 @@
 body {
   background-image: url("/assets/css/projectbackground.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
+  
 }
 
 code {
@@ -10,21 +11,52 @@ code {
 }
 
 .inner-container{
-  margin-left: 900px;
+  margin-left: 1050px;
 }
 
 .box-container{
-  margin-left: 900px;
+  margin-left: 1050px;
 }
 
 #musicbtn{
   margin-top: 300px;
 }
 
-button{
+.playSound{
 
   padding: 20px;
   width: 200px;
   margin-top: 10px;
+  background-color: purple;
+  transition: background-color .5s;
+  color: goldenrod;
+  
 
 }
+
+button{
+  background-color: purple;
+  color: goldenrod;
+  width: 300px;
+  height: 50px;
+  margin-top: 15px;
+
+}
+
+.input-group{
+  color: goldenrod;
+}
+
+.header{
+  color: goldenrod;
+}
+
+.login-btn{
+  color: goldenrod;
+  
+}
+
+/* .login-input{
+  background-color: white;
+  color: goldenrod;
+} */
