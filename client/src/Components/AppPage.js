@@ -1,6 +1,4 @@
 import React from "react";
-const createjs = window.createjs;
-
 
 function AppPage (props) {
     const sound1 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/Kick+Basic.wav");
