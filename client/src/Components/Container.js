@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import FormLogin from "./LoginForm";
 import FormRegister from "./RegisterForm";
 
+
 class Container extends Component {
   constructor(props) {
     super(props);
@@ -18,6 +19,7 @@ class Container extends Component {
 
   render() {
     return (
+      
       <div className="root-container">
         <div className="box-container">
           <button onClick={this.showLoginForm}>Login</button>

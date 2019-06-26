@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/reactreadinglist"
+  "mongodb://localhost/soundMaster"
 );
 
 const userSeed = [
@@ -23,8 +23,8 @@ const trackSeed = [
 
 const soundSeed = [
   {
-    name: "snareDrum",
-    url: "http://www.google.com"
+    name: "basicSnareDrum",
+    url: "https://project3-sounds.s3.us-east-2.amazonaws.com/Snare+Basic.wav"
   }
 ];
 
