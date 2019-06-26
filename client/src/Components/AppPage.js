@@ -2,7 +2,7 @@ import React from "react";
 const createjs = window.createjs;
 
 function AppPage (props) {
-    const sound1 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/Kick+Basic.wav");
+ const sound1 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/Kick+Basic.wav");
  const sound2 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/Hat+Basic.wav");
  const sound3 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/Snare+Basic.wav");
  const sound4 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/Clap+Basic.wav");
