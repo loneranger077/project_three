@@ -1,17 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Container from "./Components/Container";
+import AppPage from "./Components/AppPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Soon you will be able to login, make music, and save your tracks right here!
-        </p>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" component={AppPage} />
+        <Route path="/login" component={Container} />
+      </div>
+    </Router>
   );
 }
 

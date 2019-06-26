@@ -1,13 +1,30 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url("/assets/css/projectbackground.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.inner-container{
+  margin-left: 900px;
+}
+
+.box-container{
+  margin-left: 900px;
+}
+
+#musicbtn{
+  margin-top: 300px;
+}
+
+button{
+
+  padding: 20px;
+  width: 200px;
+  margin-top: 10px;
+
 }
