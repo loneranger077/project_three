@@ -1,6 +1,5 @@
-const db = require("../models/User");
+const User = require("../models/User");
 const jwt = require("jsonwebtoken");
-const authWare = require("../middleware/authware");
 
 module.exports = function(app) {
   app.post("/api/signup", function(req, res) {
