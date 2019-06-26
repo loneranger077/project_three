@@ -1,8 +1,9 @@
 import React from "react";
 import Recorderx, { ENCODE_TYPE } from "recorderx";
-const createjs = window.createjs;
+
 
 function Recorder(props) {
+    console.log("Hello World!!")
 
     const rc = new Recorderx();
 
@@ -17,13 +18,11 @@ function Recorder(props) {
 
 
     // pause recorderx
-    rc.pause();
-
-
+    rc.pause()
+    
     // get wave
     var wave = rc.getRecord({
         encodeTo: ENCODE_TYPE.WAV,
-        compressible: true
     })
 
     
@@ -33,7 +32,7 @@ function Recorder(props) {
 
             <div>
                 <div><button onClick={() => rc.start()} className="recording" id="record">Record</button></div>
-                <div><button onClickr={() => rc.pause()} className="recording" id="pause">Pause</button></div>
+                <div><button onClick={() => rc.pause()} className="recording" id="record">pause</button></div>
 
             </div>
         </div>
@@ -41,6 +40,6 @@ function Recorder(props) {
 
 
 
-}
+};
 
 export default Recorder

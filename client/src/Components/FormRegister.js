@@ -26,7 +26,7 @@ class FormRegister extends Component {
   render() {
     return (
       <div className="inner-container">
-        <div className="header">Register</div>
+        <div className="header">Please Register</div>
         <div className="box">
           <div className="input-group">
             <label htmlFor="username">Username</label>
