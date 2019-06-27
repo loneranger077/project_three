@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+import API from "../utils/API";
+import Auth from "../utils/Auth";
 
 class FormRegister extends Component {
   constructor(props) {
     super(props);
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      email: ""
     };
   }
 
@@ -17,7 +20,18 @@ class FormRegister extends Component {
     });
   };
 
-  submitRegister(e) {}
+  submitRegister(e) {
+    e.preventDefault();
+    const userData = this.state;
+    Auth.register(userData).then(data => console.log(data));
+    // const { username, password, email } = this.state;
+    // if (username && password && email) {
+    //   Auth.logIn(username, password, response => {
+    //     this.context.setUser(response);
+    //     this.props.history.push("/");
+    //   });
+    // }
+  }
   render() {
     return (
       <div className="inner-container">
@@ -28,6 +42,8 @@ class FormRegister extends Component {
             <input
               type="text"
               name="username"
+              value={this.state.username}
+              onChange={this.handleInputChange}
               className="loing-input"
               placeholder="Username"
             />
@@ -37,6 +53,8 @@ class FormRegister extends Component {
             <input
               type="password"
               name="password"
+              value={this.state.password}
+              onChange={this.handleInputChange}
               className="login-input"
               placeholder="Password"
             />
@@ -46,6 +64,8 @@ class FormRegister extends Component {
             <input
               type="text"
               name="email"
+              value={this.state.email}
+              onChange={this.handleInputChange}
               className="login-input"
               placeholder="Email"
             />
