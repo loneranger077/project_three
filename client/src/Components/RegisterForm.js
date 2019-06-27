@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import API from "../utils/API";
+
 import Auth from "../utils/Auth";
 
 class FormRegister extends Component {

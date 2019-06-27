@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/3001");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/soundMaster");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -17,6 +17,7 @@ if (process.env.NODE_ENV === "production") {
 }
 // Add routes, both API and view
 require("./controllers/authenticateController")(app);
+require("./controllers/soundcontroller")(app);
 
 if (process.env.NODE_ENV === "production") {
   app.get("*", function(req, res) {
