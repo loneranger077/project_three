@@ -2,6 +2,7 @@ import axios from "axios";
 
 function Auth() {
   let loggedIn = false;
+
   function register(userData) {
     console.log(userData);
     return axios
