@@ -2,7 +2,8 @@ const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 
 module.exports = function(app) {
-  app.post("/api/signup", function(req, res) {
+  app.post("/api/register", function(req, res) {
+    console.log(req.body);
     User.create(req.body)
       .then(function(result) {
         res.json({ message: "user created" });
