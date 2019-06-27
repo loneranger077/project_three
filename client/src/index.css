@@ -56,7 +56,7 @@ button{
   
 }
 
-/* .login-input{
-  background-color: white;
-  color: goldenrod;
-} */
+.form-check{
+  padding: 25px;
+}
+
