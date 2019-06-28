@@ -9,7 +9,7 @@ const UserSchema = new mongoose.Schema({
     }
   },
   password: String,
-  children: [SoundSchema]
+  children: [Sounds]
 });
 
 UserSchema.methods.comparePassword = function(inputPass) {
