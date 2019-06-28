@@ -4,7 +4,7 @@ function Sound() {
   function saveSounds(soundData) {
     console.log(soundData);
     return axios
-      .post("/api/sounds", soundData)
+      .put("/api/sounds", soundData)
       .then(function(response) {
         console.log(response);
         return response;
@@ -16,7 +16,7 @@ function Sound() {
   function retrieveSounds(soundData) {
     console.log(soundData);
     return axios
-      .get("/api/sounds", soundData)
+      .get(`/api/users/${userId}/sounds`, soundData)
       .then(function(response) {
         console.log(response);
         return response;

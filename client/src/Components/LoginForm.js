@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Auth from "../utils/Auth";
+import { Link } from "react-router-dom";
 
 class FormLogin extends Component {
   constructor(props) {
@@ -19,6 +21,8 @@ class FormLogin extends Component {
 
   handleLoginSubmit = event => {
     event.preventDefault();
+    const { username, password } = this.state;
+    Auth.logIn(username, password, data => console.log(data));
   };
   render() {
     return (
@@ -53,7 +57,7 @@ class FormLogin extends Component {
             className="login-btn"
             onClick={this.handleLoginSubmit.bind(this)}
           >
-            Login
+            <Link to={"/AppPage"}>Login</Link>
           </button>
         </div>
       </div>
