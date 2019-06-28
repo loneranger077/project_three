@@ -3,10 +3,7 @@ const db = require("../models");
 
 // This file empties all collections and inserts the seeds below
 
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  "mongodb://localhost/soundMaster"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/soundMaster");
 
 const userSeed = [
   {
@@ -15,21 +12,45 @@ const userSeed = [
   }
 ];
 
-const trackSeed = [
-  {
-    name: "randomBeat"
-  }
-];
-
 const soundSeed = [
   {
     name: "basicSnareDrum",
     url: "https://project3-sounds.s3.us-east-2.amazonaws.com/Snare+Basic.wav"
+  },
+  {
+    name: "basicClap",
+    url: "https://project3-sounds.s3.us-east-2.amazonaws.com/Clap+Basic.wav"
+  },
+  {
+    name: "basicHat",
+    url: "https://project3-sounds.s3.us-east-2.amazonaws.com/Hat+Basic.wav"
+  },
+  {
+    name: "basicKick",
+    url: "https://project3-sounds.s3.us-east-2.amazonaws.com/Kick+Basic.wav"
+  },
+  {
+    name: "basicSnare",
+    url: "https://project3-sounds.s3.us-east-2.amazonaws.com/Snare+Basic.wav"
+  },
+  {
+    name: "electricBass",
+    url:
+      "https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/bass/electric/FINGER+BS+1B/BRITEBSE2.wav"
+  },
+  {
+    name: "acousticGuitar",
+    url:
+      "https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/guitar/accoustic/XTRA+AC+GTR1/GTR+BN4+AC+M.wav"
+  },
+  {
+    name: "electricGuitarJazz",
+    url:
+      "https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/guitar/electric/Jazz+Guitar/Jazz+Guitar+D4.wav"
   }
 ];
 
-db.User
-  .remove({})
+db.User.remove({})
   .then(() => db.User.collection.insertMany(userSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
@@ -40,8 +61,7 @@ db.User
     process.exit(1);
   });
 
-  db.Track
-  .remove({})
+db.Track.remove({})
   .then(() => db.Track.collection.insertMany(trackSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
@@ -52,8 +72,7 @@ db.User
     process.exit(1);
   });
 
-  db.Sound
-  .remove({})
+db.Sound.remove({})
   .then(() => db.Sound.collection.insertMany(soundSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
@@ -62,4 +81,4 @@ db.User
   .catch(err => {
     console.error(err);
     process.exit(1);
-  })
+  });
