@@ -8,8 +8,7 @@ const UserSchema = new mongoose.Schema({
       unique: true
     }
   },
-  password: String,
-  children: [Sounds]
+  password: String
 });
 
 UserSchema.methods.comparePassword = function(inputPass) {
