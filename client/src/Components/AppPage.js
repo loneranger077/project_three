@@ -33,6 +33,10 @@ function AppPage(props) {
     const sound19 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/piano/Bright+Yamaha+Grand/P200+Piano+C7.wav")
     const sound20 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/guitar/wah/Wah+Guitars/96+Wha-4.wav")
 
+    function userButtons () {
+        window.location.href = "https://soundmonster.herokuapp.com/apppage2";
+    };
+
     return (
         <div
             className="container" id="musicbtn">
@@ -269,7 +273,7 @@ function AppPage(props) {
                     </div>
                     <div className="row">
                     <div className="column">
-                        <div><button className="submit" id="save">Save</button>
+                        <div><button className="submit" id="save" onClick={userButtons}>Save</button>
                         </div>
                     </div>
                     </div>
@@ -278,6 +282,6 @@ function AppPage(props) {
                 </div>
         </div>
     )
-}
+};
 
 export default AppPage;
