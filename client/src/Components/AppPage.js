@@ -28,6 +28,10 @@ function AppPage(props) {
     const sound14 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/brass/trumpet/TRUMPET++++3/TRUMPET+++19.wav")
     const sound15 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Drums/Bass+Drum/Bounce/tr808kick02.wav")
     const sound16 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/Percussion/808+Rim.wav")
+    const sound17 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/organ/808800008F+1/EB5F.wav")
+    const sound18 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/brass/section/Pop+horn+EPS/Pop+horn+EPS.wav")
+    const sound19 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/piano/Bright+Yamaha+Grand/P200+Piano+C7.wav")
+    const sound20 = new Audio("https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/guitar/wah/Wah+Guitars/96+Wha-4.wav")
 
     return (
         <div
@@ -207,7 +211,7 @@ function AppPage(props) {
                     </div>
                    
                     <div className="column">
-                        <div><button onClick={() =>sound16.play()} className="playSound" id="snare">Basic Snare Drum </button>
+                        <div><button onClick={() =>sound16.play()} className="playSound" id="snare">Basic Kick Drum</button>
                         </div>
                     </div>
                     <div className="column">
@@ -222,7 +226,7 @@ function AppPage(props) {
                 <div className="row">
                 {/* This is ROW 1 */}
                     <div className="column">
-                        <div><button onClick={() => sound1.play()} className="playSound" id="kick">Basic Kick Drum</button>
+                        <div><button onClick={() => sound17.play()} className="playSound" id="kick">Organ</button>
                         </div>
                     </div>
                     <div className="column">
@@ -233,7 +237,7 @@ function AppPage(props) {
                     </div>
                    
                     <div className="column">
-                        <div><button onClick={() =>sound3.play()} className="playSound" id="snare">Basic Snare Drum </button>
+                        <div><button onClick={() =>sound18.play()} className="playSound" id="snare">Pop Horn </button>
                         </div>
                     </div>
                     <div className="column">
@@ -243,7 +247,7 @@ function AppPage(props) {
                         </div>
                     </div>
                     <div className="column">
-                        <div><button onClick={() => sound1.play()} className="playSound" id="kick">Basic Kick Drum</button>
+                        <div><button onClick={() => sound19.play()} className="playSound" id="kick">Piano</button>
                         </div>
                     </div>
                     <div className="column">
@@ -254,7 +258,7 @@ function AppPage(props) {
                     </div>
                    
                     <div className="column">
-                        <div><button onClick={() =>sound3.play()} className="playSound" id="snare">Basic Snare Drum </button>
+                        <div><button onClick={() =>sound20.play()} className="playSound" id="snare">Wah-Guitar </button>
                         </div>
                     </div>
                     <div className="column">
