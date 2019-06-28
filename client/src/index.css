@@ -46,7 +46,7 @@ button{
 }
 
 .input-group{
-  color: goldenrod;
+  color: white;
 }
 
 .header{
@@ -59,6 +59,7 @@ button{
 }
 .login-input{
   background-color: white;
+  color: white;
  
 }
 
