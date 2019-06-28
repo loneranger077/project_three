@@ -207,7 +207,7 @@ function AppPage(props) {
                     </div>
                    
                     <div className="column">
-                        <div><button onClick={() =>sound3.play()} className="playSound" id="snare">Basic Snare Drum </button>
+                        <div><button onClick={() =>sound16.play()} className="playSound" id="snare">Basic Snare Drum </button>
                         </div>
                     </div>
                     <div className="column">
@@ -262,6 +262,12 @@ function AppPage(props) {
                             <input className="form-check-input" type="checkbox" id="inlineCheckbox1" ></input>
                             <label className="form-check-label" for="inlineCheckbox1"></label>
                         </div>
+                    </div>
+                    <div className="row">
+                    <div className="column">
+                        <div><button className="submit" id="save">Save</button>
+                        </div>
+                    </div>
                     </div>
 
 
