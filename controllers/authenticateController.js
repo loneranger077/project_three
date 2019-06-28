@@ -15,6 +15,7 @@ module.exports = function(app) {
 
   app.post("/api/authenticate", function(req, res) {
     const { username, password } = req.body;
+    console.log(username, password);
     User.findOne({ username: username }).then(function(dbUser) {
       if (!dbUser)
         return res

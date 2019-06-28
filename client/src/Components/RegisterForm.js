@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 import Auth from "../utils/Auth";
 
 class FormRegister extends Component {
@@ -75,7 +75,7 @@ class FormRegister extends Component {
             className="login-btn"
             onClick={this.submitRegister.bind(this)}
           >
-            Register
+            <Link to={"/AppPage"}>Register</Link>
           </button>
         </div>
       </div>
