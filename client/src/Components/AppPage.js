@@ -265,7 +265,7 @@ function AppPage(props) {
                     </div>
                     <div className="row">
                     <div className="column">
-                        <div><button className="submit" id="save">Save</button>
+                        <div><button className="submit" onclick="location.href = 'https://soundmonster.herokuapp.com/AppPage2';" id="save">Save</button>
                         </div>
                     </div>
                     </div>
@@ -274,6 +274,6 @@ function AppPage(props) {
                 </div>
         </div>
     )
-}
+};
 
 export default AppPage;
