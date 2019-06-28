@@ -32,7 +32,7 @@ class FormLogin extends Component {
               name="username"
               value={this.state.username}
               onChange={this.handleInputChange}
-              className="loing-input"
+              className="login-input"
               placeholder="Username"
             />
           </div>
