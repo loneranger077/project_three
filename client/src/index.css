@@ -2,6 +2,8 @@ body {
   background-image: url("/assets/css/projectbackground.png");
   background-repeat: no-repeat;
   background-size: auto;
+  background-color: black;
+  
   
 }
 
@@ -55,8 +57,18 @@ button{
   color: goldenrod;
   
 }
-
-/* .login-input{
+.login-input{
   background-color: white;
-  color: goldenrod;
-} */
+ 
+}
+
+.form-check{
+  padding: 25px;
+}
+
+#save{
+  margin-left: 400px;
+  background-color:goldenrod;
+  color: purple;
+}
+
