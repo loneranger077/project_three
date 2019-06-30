@@ -55,8 +55,7 @@ class FormLogin extends Component {
           <button
             type="button"
             className="login-btn"
-            onClick={this.handleLoginSubmit.bind(this)}
-          >
+            onClick={this.handleLoginSubmit.bind(this)}>
             <Link to={"/AppPage"}>Login</Link>
           </button>
         </div>
