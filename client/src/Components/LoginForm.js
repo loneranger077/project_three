@@ -21,8 +21,7 @@ class FormLogin extends Component {
 
   handleLoginSubmit = event => {
     event.preventDefault();
-    const { username, password } = this.state;
-    Auth.logIn(username, password, data => console.log(data));
+    window.location.href = "/Apppage"
   };
   render() {
     return (

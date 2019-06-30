@@ -72,9 +72,10 @@ function AppPage(props) {
     "https://project3-sounds.s3.us-east-2.amazonaws.com/The+Industry+Collection/Multi+Samples/guitar/wah/Wah+Guitars/96+Wha-4.wav"
   );
 
-  function handleSaveSubmit(e) {
-      const data = new FormData();
-      console.log([...data.keys()]);
+  function userButtons() {
+    window.location.href = "/Favorites";
+
+ 
   }
 
   return (
