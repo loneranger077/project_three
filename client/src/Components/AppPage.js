@@ -80,7 +80,6 @@ function AppPage(props) {
 
   return (
     <div className="container" id="musicbtn">
-       <form onSubmit={handleSaveSubmit}> 
         <div className="row">
           {/* This is ROW 1 */}
           <div className="column">
@@ -548,14 +547,13 @@ function AppPage(props) {
           <div className="row">
             <div className="column">
               <div>
-                <button className="login-button" id="save" type="button" onClick={handleSaveSubmit()}>
+                <button className="login-button" id="save" type="button">
                 <Link to={"/Favorites"}>Save</Link>
                 </button>
               </div>
             </div>
           </div>
         </div>
-      </form>
     </div>
   );
 }
