@@ -19,6 +19,7 @@ class FormLogin extends Component {
 
   handleLoginSubmit = event => {
     event.preventDefault();
+    window.location.href = "/Apppage"
   };
   render() {
     return (

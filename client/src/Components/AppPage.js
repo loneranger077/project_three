@@ -71,7 +71,7 @@ function AppPage(props) {
   );
 
   function userButtons() {
-    window.location.href = "https://soundmonster.herokuapp.com/apppage2";
+    window.location.href = "/Favorites";
   }
 
   return (
