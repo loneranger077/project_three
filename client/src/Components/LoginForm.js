@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Auth from "../utils/Auth";
+import { Link } from "react-router-dom";
 
 class FormLogin extends Component {
   constructor(props) {
@@ -52,9 +54,8 @@ class FormLogin extends Component {
           <button
             type="button"
             className="login-btn"
-            onClick={this.handleLoginSubmit.bind(this)}
-          >
-            Login
+            onClick={this.handleLoginSubmit.bind(this)}>
+            <Link to={"/AppPage"}>Login</Link>
           </button>
         </div>
       </div>
