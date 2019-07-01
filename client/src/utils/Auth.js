@@ -19,7 +19,7 @@ function Auth() {
   function logIn(username, password, cb) {
     axios
       .post("/api/authenticate", { username, password })
-      .hen(response => {
+      .then(response => {
         localStorage.setItem("token", response.data.token);
         loggedIn = true;
         cb(response.data);
